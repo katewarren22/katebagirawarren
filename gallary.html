@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gallery - Katebangira Warren</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background: #f0f2f5;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a5276, #2e86c1);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 32px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin-top: 8px;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: white;
+            text-align: center;
+            padding: 12px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #1a5276;
+            font-weight: bold;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #f1c40f;
+        }
+
+        .gallery {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 15px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card video {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            display: block;
+            background: #000;
+        }
+
+        .card p {
+            padding: 12px;
+            text-align: center;
+            font-weight: 600;
+            color: #1a5276;
+        }
+
+        footer {
+            background: #1a5276;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Gallery</h1>
+        <p>Katebangira Warren - My Memories & Moments</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about-me.html">About Me</a>
+        <a href="contact.html">Contacts</a>
+    </nav>
+
+    <div class="gallery">
+
+        <!-- PICTURE 1 - Change pic1.jpg to your photo name -->
+        <div class="card">
+            <img src="C:\Users\AB PLUS TECH\Documents\GitHub\katebangirawarren2\warren2.jpeg" alt="My Picture 1">
+            <p>Me in the garden</p>
+        </div>
+
+        <!-- PICTURE 2 -->
+        <div class="card">
+            <img src="C:\Users\AB PLUS TECH\Documents\GitHub\katebangirawarren2\warren1.jpeg" alt="My Picture 2">
+            <p>Me with my friends out for a morning drill</p>
+        </div>
+
+        <!-- PICTURE 3 -->
+        <div class="card">
+            <img src="C:\Users\AB PLUS TECH\Documents\GitHub\katebangirawarren2\warren7.jpeg " alt="My Picture 3">
+            <p>me at the Basketball court</p>
+        </div>
+
+        <!-- PICTURE 4 -->
+        <div class="card">
+            <img src=" C:\Users\AB PLUS TECH\Documents\GitHub\katebangirawarren2\warren5.jpeg" alt="My Picture 4">
+            <p>Fitness Club</p>
+        </div>
+
+        <!-- PICTURE 5 -->
+        <div class="card">
+            <img src="C:\Users\AB PLUS TECH\Documents\GitHub\katebangirawarren2\warren3.jpeg " alt="My Picture 5">
+            <p>Swimming in a river in Kasese</p>
+        </div>
+
+        <div class="card">
+            <video controls preload="metadata" aria-label="Warren video">
+                <source src="photo%20video/warren.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+            <p>Warren</p>
+        </div>
+    </div>
+
+    <footer>
+        <marquee>&copy; katebangirawarren 2026. All rights reserved</marquee>
+    </footer>
+</body>
+</html>
