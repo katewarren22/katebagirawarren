@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Katebangira Warren</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #edf3f2, #f8f5ef);
+            color: #263b3b;
+        }
+
+        .contact-section {
+            max-width: 760px;
+        }
+
+        .contact-card {
+            background: #fff;
+            border: 1px solid rgba(25, 59, 60, 0.08);
+            border-radius: 20px;
+            box-shadow: 0 16px 40px rgba(25, 59, 60, 0.12);
+            padding: clamp(1.5rem, 5vw, 3rem);
+        }
+
+        .contact-heading {
+            color: #193b3c;
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        .contact-intro {
+            color: #607071;
+        }
+
+        .form-label {
+            color: #294849;
+            font-weight: 600;
+        }
+
+        .form-control {
+            border-color: #d7e0dd;
+            border-radius: 10px;
+            padding: 0.75rem 0.9rem;
+        }
+
+        .form-control:focus {
+            border-color: #4a7772;
+            box-shadow: 0 0 0 0.25rem rgba(74, 119, 114, 0.18);
+        }
+
+        .send-button {
+            background: #f0b35d;
+            border-color: #f0b35d;
+            border-radius: 10px;
+            color: #173537;
+            font-weight: 700;
+            padding: 0.7rem 1.25rem;
+        }
+
+        .send-button:hover,
+        .send-button:focus {
+            background: #ffd18c;
+            border-color: #ffd18c;
+            color: #173537;
+        }
+
+        .contact-methods {
+            border-top: 1px solid #e3e9e6;
+            margin-top: 1.75rem;
+            padding-top: 1.25rem;
+        }
+
+        .contact-methods a {
+            color: #245c5b;
+            font-weight: 600;
+            text-decoration-color: #f0b35d;
+            text-underline-offset: 3px;
+            overflow-wrap: anywhere;
+        }
+
+        .contact-methods a:hover,
+        .contact-methods a:focus {
+            color: #173537;
+        }
+
+        footer {
+            background: #193b3c;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Katebangira Warren</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavigation">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about-me.html">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallary.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container contact-section py-5">
+        <section class="contact-card" aria-labelledby="contact-title">
+            <h1 id="contact-title" class="contact-heading text-center mb-3">Get in Touch</h1>
+            <p class="contact-intro text-center mb-4">Have a question or want to connect? Send me a message.</p>
+
+            <form>
+                <div class="mb-3">
+                    <label for="fullName" class="form-label">Full name</label>
+                    <input type="text" class="form-control" id="fullName" name="fullName" autocomplete="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" autocomplete="email" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn send-button">Send message</button>
+            </form>
+
+            <div class="contact-methods">
+                <h2 class="h5 mb-3">Other ways to reach me</h2>
+                <p class="mb-2">Phone: <a href="tel:+256701360544">+256 701 360 544</a></p>
+                <p class="mb-2">WhatsApp: <a href="https://wa.me/256701030544">+256 701 030 544</a></p>
+                <p class="mb-0">Email: <a href="mailto:katebangirawarren@gmail.com">katebangirawarren@gmail.com</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-3">
+        <p class="mb-0">&copy; Katebangira Warren 2026. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
